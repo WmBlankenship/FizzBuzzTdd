@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FizzBuzzLogic\FizzBuzzLogic.csproj">
-      <Project>{6aba8053-c979-4dad-80dd-1dad2fb961f9}</Project>
+      <Project>{a533f192-b53a-4b29-89b9-5d553c915b31}</Project>
       <Name>FizzBuzzLogic</Name>
     </ProjectReference>
   </ItemGroup>
