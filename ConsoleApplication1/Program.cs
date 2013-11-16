@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FizzBuzzTdd.Tests;
+using FizzBuzzLogic;
 
 namespace ConsoleApplication1
 {
@@ -13,7 +13,7 @@ namespace ConsoleApplication1
         {
             for (int i = 1; i <= 100; i++)
             {
-                Console.WriteLine(Class2.GetOutput(i));
+                Console.WriteLine(FBLogic.GetOutput(i));
             }
             Console.Read();
         }

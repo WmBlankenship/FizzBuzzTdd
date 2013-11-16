@@ -49,9 +49,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FizzBuzzTdd.Tests\FizzBuzzTdd.Tests.csproj">
-      <Project>{0c27a81a-2435-47b0-8826-7cc541d9145b}</Project>
-      <Name>FizzBuzzTdd.Tests</Name>
+    <ProjectReference Include="..\FizzBuzzLogic\FizzBuzzLogic.csproj">
+      <Project>{6aba8053-c979-4dad-80dd-1dad2fb961f9}</Project>
+      <Name>FizzBuzzLogic</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
