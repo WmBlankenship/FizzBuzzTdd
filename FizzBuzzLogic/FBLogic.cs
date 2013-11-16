@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FizzBuzzLogic
 {
@@ -10,26 +7,22 @@ namespace FizzBuzzLogic
     {
         public static string GetOutput(int num)
         {
-            string output;
-
             if (num % 3 == 0 && num % 5 == 0)
             {
-                output = "FizzBuzz";
+                return "FizzBuzz";
             }
             else if (num % 3 == 0)
             {
-                output = "Fizz";
+                return "Fizz";
             }
             else if (num % 5 == 0)
             {
-                output = "Buzz";
+                return "Buzz";
             }
             else
             {
-                output = num.ToString();
+                return num.ToString();
             }
-
-            return output;
         }
     }
 }
