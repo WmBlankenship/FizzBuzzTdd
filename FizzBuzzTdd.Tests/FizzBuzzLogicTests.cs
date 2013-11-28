@@ -11,33 +11,33 @@ namespace FizzBuzzTdd.Tests
         [Test]
         public void GetOutForNumberDivisibleByJustThreeReturnsFizz()
         {
-            Assert.AreEqual(FBLogic.GetOutput(3), "Fizz");
-            Assert.AreEqual(FBLogic.GetOutput(6), "Fizz");
-            Assert.AreEqual(FBLogic.GetOutput(9), "Fizz");
+            Assert.AreEqual("Fizz", FBLogic.GetOutput(3));
+            Assert.AreEqual("Fizz", FBLogic.GetOutput(6));
+            Assert.AreEqual("Fizz", FBLogic.GetOutput(9));
         }
 
         [Test]
         public void GetOutputForNumberDivisibleByJustFiveReturnsBuzz()
         {
-            Assert.AreEqual(FBLogic.GetOutput(5), "Buzz");
-            Assert.AreEqual(FBLogic.GetOutput(10), "Buzz");
-            Assert.AreEqual(FBLogic.GetOutput(20), "Buzz");
+            Assert.AreEqual("Buzz", FBLogic.GetOutput(5));
+            Assert.AreEqual("Buzz", FBLogic.GetOutput(10));
+            Assert.AreEqual("Buzz", FBLogic.GetOutput(20));
         }
 
         [Test]
         public void GetOutputForNumberDivisibleByThreeAndFiveReturnsFizzBuzz()
         {
-            Assert.AreEqual(FBLogic.GetOutput(15), "FizzBuzz");
-            Assert.AreEqual(FBLogic.GetOutput(30), "FizzBuzz");
-            Assert.AreEqual(FBLogic.GetOutput(45), "FizzBuzz");
+            Assert.AreEqual("FizzBuzz", FBLogic.GetOutput(15));
+            Assert.AreEqual("FizzBuzz", FBLogic.GetOutput(30));
+            Assert.AreEqual("FizzBuzz", FBLogic.GetOutput(45));
         }
 
         [Test]
         public void GetOutputForNumberDivisbleByNeitherReturnsNumber()
         {
-            Assert.AreEqual(FBLogic.GetOutput(7), "7");
-            Assert.AreEqual(FBLogic.GetOutput(23), "23");
-            Assert.AreEqual(FBLogic.GetOutput(37), "37");
+            Assert.AreEqual("7", FBLogic.GetOutput(7));
+            Assert.AreEqual("23", FBLogic.GetOutput(23));
+            Assert.AreEqual("37", FBLogic.GetOutput(37));
         }
     }
 }
