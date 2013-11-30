@@ -11,33 +11,37 @@ namespace FizzBuzzTdd.Tests
         [Test]
         public void GetOutForNumberDivisibleByJustThreeReturnsFizz()
         {
-            Assert.AreEqual("Fizz", FBLogic.GetOutput(3));
-            Assert.AreEqual("Fizz", FBLogic.GetOutput(6));
-            Assert.AreEqual("Fizz", FBLogic.GetOutput(9));
+            var fBLogic = new FBLogic(); 
+            Assert.AreEqual("Fizz", fBLogic.GetOutput(3));
+            Assert.AreEqual("Fizz", fBLogic.GetOutput(6));
+            Assert.AreEqual("Fizz", fBLogic.GetOutput(9));
         }
 
         [Test]
         public void GetOutputForNumberDivisibleByJustFiveReturnsBuzz()
         {
-            Assert.AreEqual("Buzz", FBLogic.GetOutput(5));
-            Assert.AreEqual("Buzz", FBLogic.GetOutput(10));
-            Assert.AreEqual("Buzz", FBLogic.GetOutput(20));
+            var fBLogic = new FBLogic(); 
+            Assert.AreEqual("Buzz", fBLogic.GetOutput(5));
+            Assert.AreEqual("Buzz", fBLogic.GetOutput(10));
+            Assert.AreEqual("Buzz", fBLogic.GetOutput(20));
         }
 
         [Test]
         public void GetOutputForNumberDivisibleByThreeAndFiveReturnsFizzBuzz()
         {
-            Assert.AreEqual("FizzBuzz", FBLogic.GetOutput(15));
-            Assert.AreEqual("FizzBuzz", FBLogic.GetOutput(30));
-            Assert.AreEqual("FizzBuzz", FBLogic.GetOutput(45));
+            var fBLogic = new FBLogic(); 
+            Assert.AreEqual("FizzBuzz", fBLogic.GetOutput(15));
+            Assert.AreEqual("FizzBuzz", fBLogic.GetOutput(30));
+            Assert.AreEqual("FizzBuzz", fBLogic.GetOutput(45));
         }
 
         [Test]
         public void GetOutputForNumberDivisbleByNeitherReturnsNumber()
         {
-            Assert.AreEqual("7", FBLogic.GetOutput(7));
-            Assert.AreEqual("23", FBLogic.GetOutput(23));
-            Assert.AreEqual("37", FBLogic.GetOutput(37));
+            var fBLogic = new FBLogic(); 
+            Assert.AreEqual("7", fBLogic.GetOutput(7));
+            Assert.AreEqual("23", fBLogic.GetOutput(23));
+            Assert.AreEqual("37", fBLogic.GetOutput(37));
         }
     }
 }

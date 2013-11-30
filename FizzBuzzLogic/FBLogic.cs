@@ -5,7 +5,7 @@ namespace FizzBuzzLogic
 {
     public class FBLogic
     {
-        public static string GetOutput(int num)
+        public string GetOutput(int num)
         {
             if (num % 3 == 0 && num % 5 == 0)
             {

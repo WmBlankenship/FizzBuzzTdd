@@ -8,9 +8,10 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            var fBLogic = new FBLogic();
             for (int i = 1; i <= 100; i++)
             {
-                Console.WriteLine(FBLogic.GetOutput(i));
+                Console.WriteLine(fBLogic.GetOutput(i));
             }
             Console.Read();
         }
