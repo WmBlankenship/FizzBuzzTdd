@@ -7,22 +7,19 @@ namespace FizzBuzzLogic
     {
         public string GetOutput(int num)
         {
-            if (num % 3 == 0 && num % 5 == 0)
+            if (num % 3 == 0)
             {
-                return "FizzBuzz";
+                if (num % 5 == 0)
+                {
+                    return "FizzBuzz";
+                }
+                return "Fizz"
             }
-            else if (num % 3 == 0)
-            {
-                return "Fizz";
-            }
-            else if (num % 5 == 0)
+            if (num % 5 == 0)
             {
                 return "Buzz";
             }
-            else
-            {
-                return num.ToString();
-            }
+            return num.ToString();
         }
     }
 }
